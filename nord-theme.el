@@ -1,6 +1,5 @@
 ;; nord-theme.el --- Nord Theme
 
-
 ;;; Commentary:
 
 ;; A dark color theme available for a number of editors.
@@ -28,7 +27,6 @@
       (nord14 "#A3BE8C")
       (nord15 "#B48EAD"))
 
-  
   (custom-theme-set-faces
    'nord
    `(default ((,class (:background ,nord0 :foreground ,nord4))))
@@ -211,7 +209,7 @@
    `(term-color-cyan ((,class (:foreground ,nord14 :background ,nord14))))
    `(term-color-white ((,class (:foreground ,nord5 :background ,nord5))))
    `(rainbow-delimiters-unmatched-face ((,class :foreground ,nord12)))
-   `(helm-header ((,class (:foreground ,nord5 :background ,nord0 :underline nil :box nil))))
+   `(helm-header ((,class (:height 1.44 :foreground ,nord5 :background ,nord0 :underline nil :box nil))))
    `(helm-source-header ((,class (:foreground ,nord9 :background ,nord0 :underline nil :weight bold))))
    `(helm-selection ((,class (:background ,nord1 :underline nil))))
    `(helm-selection-line ((,class (:background ,nord1))))
