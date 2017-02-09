@@ -2,15 +2,15 @@
 
 ;;; Commentary:
 
-;; A dark color theme available for a number of editors.
-
 ;;; Code:
-
 
 (deftheme nord)
 
+(if (display-graphic-p) (setq nord0 "#2e3440") (setq nord0 nil))
+
+
 (let ((class '((class color) (min-colors 89)))
-      (nord0  "#2e3440")
+      ;; (nord0  "#2e3440")
       (nord1  "#3b4252")
       (nord2  "#434c5e")
       (nord3  "#4c566a")
@@ -51,7 +51,7 @@
    `(isearch ((,class (:bold t :foreground ,nord12 :background ,nord2))))
    `(isearch-fail ((,class (:foreground ,nord0 :background ,nord12))))
    `(mode-line ((,class (:foreground nil :background ,nord2 :box ,nord4))))
-   `(mode-line-inactive ((,class (:foreground ,nord4 :background ,nord1 :box ,nord2))))
+   `(mode-line-inactive ((,class (:foreground ,nord3 :background ,nord1 :box ,nord2))))
    `(vertical-border ((,class (:foreground ,nord1))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,nord9))))
    `(default-italic ((,class (:italic t))))
@@ -61,8 +61,8 @@
    `(outline-1 ((,class (:foreground ,nord14))))
    `(outline-2 ((,class (:foreground ,nord15))))
    `(outline-3 ((,class (:foreground ,nord8))))
-   `(outline-4 ((,class (:foreground ,nord15))))
-   `(outline-5 ((,class (:foreground ,nord15))))
+   `(outline-4 ((,class (:foreground ,nord12))))
+   `(outline-5 ((,class (:foreground ,nord13))))
    `(outline-6 ((,class (:foreground ,nord10))))
    `(org-agenda-structure ((,class (:foreground ,nord15))))
    `(org-agenda-date ((,class (:foreground ,nord8 :underline nil))))
@@ -70,8 +70,8 @@
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,nord3))))
    `(org-block ((,class (:foreground ,nord15))))
    `(org-block-background ((,class (:background ,nord1))))
-   `(org-block-begin-line ((,class (:background ,nord9))))
-   `(org-block-end-line ((,class (:background ,nord9))))
+   `(org-block-begin-line ((,class (:background ,nord3 :foreground ,nord13))))
+   `(org-block-end-line ((,class (:background ,nord3 :foreground ,nord13))))
    `(org-checkbox-statistics-done ((,class (:foreground ,nord14))))
    `(org-checkbox-statistics-todo ((,class (:foreground ,nord13))))
    `(org-code ((,class (:foreground ,nord13))))
