@@ -8,7 +8,6 @@
 
 (if (display-graphic-p) (setq nord0 "#2e3440") (setq nord0 nil))
 
-
 (let ((class '((class color) (min-colors 89)))
       ;; (nord0  "#2e3440")
       (nord1  "#3b4252")
@@ -29,6 +28,9 @@
 
   (custom-theme-set-faces
    'nord
+
+
+   ;; Basic Faces
    `(default ((,class (:background ,nord0 :foreground ,nord4))))
    `(font-lock-builtin-face ((,class (:foreground ,nord9))))
    `(font-lock-comment-face ((,class (:foreground ,nord3))))
@@ -48,6 +50,7 @@
    `(fringe ((,class (:background ,nord0 :foreground ,nord5))))
    `(cursor ((,class (:background ,nord6))))
    `(show-paren-match-face ((,class (:background ,nord12))))
+
    `(isearch ((,class (:bold t :foreground ,nord12 :background ,nord2))))
    `(isearch-fail ((,class (:foreground ,nord0 :background ,nord12))))
    `(mode-line ((,class (:foreground nil :background ,nord2 :box ,nord4))))
@@ -58,6 +61,8 @@
    `(link ((,class (:foreground ,nord4 :underline t))))
    `(linum ((,class (:foreground ,nord3 :background ,nord0))))
    `(linum-relative-current-face ((,class (:foreground ,nord13 :background ,nord0))))
+
+   ;; Org Mode
    `(outline-1 ((,class (:foreground ,nord14))))
    `(outline-2 ((,class (:foreground ,nord15))))
    `(outline-3 ((,class (:foreground ,nord8))))
@@ -104,10 +109,16 @@
    `(org-sexp-date ((,class (:foreground ,nord5))))
    `(ido-first-match ((,class (:foreground ,nord9 :bold t))))
    `(ido-subdir ((,class (:foreground ,nord9))))
+
+   ;; Git Gutter
    `(git-gutter:modified ((,class (:foreground ,nord13))))
    `(git-gutter:added ((,class (:foreground ,nord14))))
    `(git-gutter:deleted ((,class (:foreground ,nord11))))
+
+   ;;Evil Mode Faces
    `(evil-ex-info ((,class (:foreground ,nord15 :italic t))))
+
+   ;;Gnus
    `(gnus-group-mail-1 ((,class (:foreground ,nord9 :bold t))))
    `(gnus-group-mail-1-empty ((,class (:inherit gnus-group-mail-1 :bold nil))))
    `(gnus-group-mail-2 ((,class (:foreground ,nord4 :bold t))))
@@ -141,6 +152,8 @@
    `(gnus-summary-markup-face ((,class (:foreground ,nord4))))
    `(gnus-summary-normal-ancient ((,class (:inherit gnus-summary-normal-read))))
    `(spam ((,class (:inherit gnus-summary-normal-read :foreground ,nord12 :strike-through t :slant oblique))))
+
+   ;;Mu4e
    `(mu4e-view-url-number-face ((,class (:foreground ,nord9))))
    `(mu4e-cited-1-face ((,class (:foreground ,nord5))))
    `(mu4e-cited-7-face ((,class (:foreground ,nord6))))
@@ -151,6 +164,7 @@
    `(mu4e-flagged-face ((,class (:foreground ,nord15))))
    `(mu4e-unread-face ((,class (:foreground ,nord3))))
    `(mu4e-link-face ((,class (:foreground ,nord8))))
+   
    `(ffap ((,class (:foreground ,nord5))))
    `(js2-private-function-call ((,class (:foreground ,nord4))))
    `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,nord14))))
@@ -175,16 +189,26 @@
    `(undo-tree-visualizer-unmodified-face ((,class :foreground ,nord4)))
    `(undo-tree-visualizer-register-face ((,class :foreground ,nord9)))
    `(slime-repl-inputed-output-face ((,class (:foreground ,nord9))))
-   `(trailing-whitespace ((,class :foreground nil :background ,nord12)))
+
+   ;; Whitespace
+   `(whitespace-line ((,class :foreground ,nord15 )))
+   `(whitespace-space ((,class :foreground ,nord13 :background ,nord0)))
+   `(trailing-whitespace ((,class :foreground nil :background ,nord15)))
    `(whitespace-trailing ((,class :inherit trailing-whitespace)))
+
+
+   ;;Rainbow Delimiters
    `(rainbow-delimiters-depth-1-face ((,class :foreground ,nord4)))
    `(rainbow-delimiters-depth-2-face ((,class :foreground ,nord8)))
    `(rainbow-delimiters-depth-3-face ((,class :foreground ,nord15)))
    `(rainbow-delimiters-depth-4-face ((,class :foreground ,nord3)))
-   `(rainbow-delimiters-depth-5-face ((,class :foreground ,nord15)))
+   `(rainbow-delimiters-depth-5-face ((,class :foreground ,nord9)))
    `(rainbow-delimiters-depth-6-face ((,class :foreground ,nord14)))
    `(rainbow-delimiters-depth-7-face ((,class :foreground ,nord13)))
    `(rainbow-delimiters-depth-8-face ((,class :foreground ,nord10)))
+   `(rainbow-delimiters-unmatched-face ((,class :foreground ,nord12)))
+
+   ;;Magit
    `(magit-item-highlight ((,class :background ,nord2)))
    `(magit-section-heading        ((,class (:foreground ,nord9 :weight bold))))
    `(magit-hunk-heading           ((,class (:background ,nord2))))
@@ -199,6 +223,8 @@
    `(magit-log-author ((,class (:foreground ,nord6))))
    `(magit-hash ((,class (:foreground ,nord5))))
    `(magit-diff-file-header ((,class (:foreground ,nord5 :background ,nord2))))
+
+   ;;Term
    `(lazy-highlight ((,class (:foreground ,nord5 :background ,nord2))))
    `(term ((,class (:foreground ,nord4 :background ,nord0))))
    `(term-color-black ((,class (:foreground ,nord2 :background ,nord2))))
@@ -209,9 +235,10 @@
    `(term-color-magenta ((,class (:foreground ,nord9 :background ,nord9))))
    `(term-color-cyan ((,class (:foreground ,nord14 :background ,nord14))))
    `(term-color-white ((,class (:foreground ,nord5 :background ,nord5))))
-   `(rainbow-delimiters-unmatched-face ((,class :foreground ,nord12)))
-   `(helm-header ((,class (:height 1.44 :foreground ,nord5 :background ,nord0 :underline nil :box nil))))
-   `(helm-source-header ((,class (:foreground ,nord9 :background ,nord0 :underline nil :weight bold))))
+
+   ;;Helm
+   `(helm-header ((,class (:height 1.1 :foreground ,nord5 :background ,nord0 :underline nil :box nil))))
+   `(helm-source-header ((,class (:height 1.44 :foreground ,nord9 :background ,nord2 :underline nil :weight bold))))
    `(helm-selection ((,class (:background ,nord1 :underline nil))))
    `(helm-selection-line ((,class (:background ,nord1))))
    `(helm-visible-mark ((,class (:foreground ,nord0 :background ,nord2))))
@@ -238,6 +265,8 @@
    `(helm-moccur-buffer ((,class (:foreground ,nord8 :background ,nord0))))
    `(helm-source-go-package-godoc-description ((,class (:foreground ,nord14))))
    `(helm-bookmark-w3m ((,class (:foreground ,nord9))))
+
+   ;;Company Mode
    `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
    `(company-preview ((,class (:background ,nord0 :foreground ,nord8))))
    `(company-preview-common ((,class (:foreground ,nord1 :foreground ,nord6))))
@@ -251,6 +280,8 @@
    `(company-tooltip-mouse ((,class (:inherit highlight))))
    `(company-tooltip-selection ((,class (:background ,nord2 :foreground ,nord6))))
    `(company-template-field ((,class (:inherit region))))
+
+   ;;Web Mode
    `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
    `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
    `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
@@ -264,6 +295,8 @@
    `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
    `(web-mode-html-tag-face ((,class (:foreground ,nord3))))
    `(web-mode-symbol-face ((,class (:foreground ,nord15))))
+
+   
    `(jde-java-font-lock-package-face ((t (:foreground ,nord4))))
    `(jde-java-font-lock-public-face ((t (:foreground ,nord9))))
    `(jde-java-font-lock-private-face ((t (:foreground ,nord9))))
@@ -275,8 +308,13 @@
    `(enh-ruby-string-delimiter-face ((,class (:foreground ,nord14))))
    `(enh-ruby-regexp-delimiter-face ((,class (:foreground ,nord14))))
    `(which-func ((,class (:inherit ,font-lock-function-name-face))))
+
+
+   ;;Fountain Mode
    `(fountain-dialog ((, class (:foreground ,nord14))))
    `(fountain-trans ((, class (:foreground ,nord15))))
+
+   ;;Powerline-Evil
    `(powerline-evil-base-face ((t (:foreground ,nord1))))
    `(powerline-evil-normal-face ((,class (:inherit powerline-evil-base-face :background ,nord14))))
    `(powerline-evil-insert-face ((,class (:inherit powerline-evil-base-face :background ,nord8))))
