@@ -110,6 +110,16 @@
    `(ido-first-match ((,class (:foreground ,nord9 :bold t))))
    `(ido-subdir ((,class (:foreground ,nord9))))
 
+   ;;Markdown
+   `(markdown-header-face-1 ((,class (:foreground ,nord14))))
+   `(markdown-header-face-2 ((,class (:foreground ,nord15))))
+   `(markdown-header-face-3 ((,class (:foreground ,nord8))))
+   `(markdown-header-face-4 ((,class (:foreground ,nord12))))
+   `(markdown-header-face-5 ((,class (:foreground ,nord13))))
+   `(markdown-header-face-6 ((,class (:foreground ,nord10))))
+   `(markdown-inline-code-face ((,class (:bold t :foreground ,nord5))))
+   `(markdown-link-face ((,class (:foreground ,nord8))))
+   
    ;; Git Gutter
    `(git-gutter:modified ((,class (:foreground ,nord13))))
    `(git-gutter:added ((,class (:foreground ,nord14))))
