@@ -116,7 +116,9 @@
    `(git-gutter:deleted ((,class (:foreground ,nord11))))
 
    ;;Evil Mode Faces
-   `(evil-ex-info ((,class (:foreground ,nord15 :italic t))))
+   `(evil-ex-info ((,class (:foreground ,nord11 :italic t))))
+   `(evil-ex-substitute-replacement ((,class (:foreground ,nord12 ))))
+   `(evil-ex-substitute-matches ((,class (:background ,nord3 :foreground ,nord13))))
 
    ;;Gnus
    `(gnus-group-mail-1 ((,class (:foreground ,nord9 :bold t))))
@@ -159,15 +161,15 @@
    `(mu4e-cited-7-face ((,class (:foreground ,nord6))))
    `(mu4e-header-marks-face ((,class (:foreground ,nord9))))
    `(mu4e-title-face ((,class (:foreground ,nord14))))
-   `(mu4e-header-key-face ((,class (:foreground ,nord15))))
-   `(mu4e-highlight-face ((,class (:foreground ,nord3))))
-   `(mu4e-flagged-face ((,class (:foreground ,nord15))))
+   `(mu4e-header-key-face ((,class (:foreground ,nord13))))
+   `(mu4e-highlight-face ((,class (:foreground ,nord10))))
+   `(mu4e-flagged-face ((,class (:foreground ,nord12))))
    `(mu4e-unread-face ((,class (:foreground ,nord3))))
    `(mu4e-link-face ((,class (:foreground ,nord8))))
    
    `(ffap ((,class (:foreground ,nord5))))
    `(js2-private-function-call ((,class (:foreground ,nord4))))
-   `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,nord14))))
+   `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,nord12))))
    `(js2-jsdoc-html-tag-name ((,class (:foreground ,nord8))))
    `(js2-external-variable ((,class (:foreground ,nord9  ))))
    `(js2-function-param ((,class (:foreground ,nord4))))
@@ -199,9 +201,9 @@
 
    ;;Rainbow Delimiters
    `(rainbow-delimiters-depth-1-face ((,class :foreground ,nord4)))
-   `(rainbow-delimiters-depth-2-face ((,class :foreground ,nord8)))
+   `(rainbow-delimiters-depth-2-face ((,class :foreground ,nord10)))
    `(rainbow-delimiters-depth-3-face ((,class :foreground ,nord15)))
-   `(rainbow-delimiters-depth-4-face ((,class :foreground ,nord3)))
+   `(rainbow-delimiters-depth-4-face ((,class :foreground ,nord7)))
    `(rainbow-delimiters-depth-5-face ((,class :foreground ,nord9)))
    `(rainbow-delimiters-depth-6-face ((,class :foreground ,nord14)))
    `(rainbow-delimiters-depth-7-face ((,class :foreground ,nord13)))
