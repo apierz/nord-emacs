@@ -25,6 +25,23 @@
 
 (deftheme nord)
 
+(defvar nord0)
+(defvar nord1)
+(defvar nord2)
+(defvar nord3)
+(defvar nord4)
+(defvar nord5)
+(defvar nord6)
+(defvar nord7)
+(defvar nord8)
+(defvar nord9)
+(defvar nord10)
+(defvar nord11)
+(defvar nord12)
+(defvar nord13)
+(defvar nord14)
+(defvar nord15)
+
 (if (display-graphic-p) (setq nord0  "#2e3440") (setq nord0  nil))
 (if (display-graphic-p) (setq nord1  "#3b4252") (setq nord1  "black"))
 (if (display-graphic-p) (setq nord3  "#434c5e") (setq nord3  "brightblack"))
