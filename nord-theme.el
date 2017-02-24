@@ -1,4 +1,4 @@
-;;; nord-theme.el --- Nord Theme
+;;; nord-theme.el --- Nord Theme port for Emacs
 
 ;; Copyright (c) 2016 Artic Ice Studio
 ;; Copyright (c) 2017 Andy Pierz
