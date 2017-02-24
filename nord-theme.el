@@ -1,6 +1,25 @@
-;; nord-theme.el --- Nord Theme
+;;; nord-theme.el --- Nord Theme
+
+;; Copyright (c) 2016 Artic Ice Studio
+;; Copyright (c) 2017 Andy Pierz
+
+;; Author Andy Pierz <andy@andypierz.com>
+;; (current maintainer)
+
+;; Version 1.0
+;; License: Apache 2.0
 
 ;;; Commentary:
+
+;; An unofficial port of the Nord Theme, created by Artic Ice Studio.
+
+;; This theme attempts to mimic the color choices and syntax highlighting of
+;; the Vim version of this theme whereever possible, but also includes a few
+;; tweaks and support for many Emacs modes such as Mu4e, Gnus, Org, Helm,
+;; Powerline and more.
+
+;; This theme is designed to work in both GUI and terminal interfaces, however
+;; it requires using Nord Colors in your terminal to display properply.
 
 ;;; Code:
 
@@ -23,8 +42,7 @@
 
 (let ((class '((class color) (min-colors 89)))
       (nord2  "#434c5e")
-      (nord4  "#d8dee9")
-      )
+      (nord4  "#d8dee9"))
 
   (custom-theme-set-faces
    'nord
