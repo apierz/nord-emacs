@@ -29,7 +29,6 @@
   (custom-theme-set-faces
    'nord
 
-
    ;; Basic Faces
    `(default ((,class (:background ,nord0 :foreground ,nord4))))
    `(font-lock-builtin-face ((,class (:foreground ,nord9))))
@@ -77,6 +76,7 @@
    `(org-block-background ((,class (:background ,nord1))))
    `(org-block-begin-line ((,class (:background ,nord3 :foreground ,nord13))))
    `(org-block-end-line ((,class (:background ,nord3 :foreground ,nord13))))
+   `(org-checkbox ((,class (:foreground ,nord13))))
    `(org-checkbox-statistics-done ((,class (:foreground ,nord14))))
    `(org-checkbox-statistics-todo ((,class (:foreground ,nord13))))
    `(org-code ((,class (:foreground ,nord13))))
@@ -174,7 +174,7 @@
    `(mu4e-header-key-face ((,class (:foreground ,nord13))))
    `(mu4e-highlight-face ((,class (:foreground ,nord10))))
    `(mu4e-flagged-face ((,class (:foreground ,nord12))))
-   `(mu4e-unread-face ((,class (:foreground ,nord3))))
+   `(mu4e-unread-face ((,class (:foreground ,nord4))))
    `(mu4e-link-face ((,class (:foreground ,nord8))))
    
    `(ffap ((,class (:foreground ,nord5))))
