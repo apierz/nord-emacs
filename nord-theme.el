@@ -23,43 +23,27 @@
 
 ;;; Code:
 
-(deftheme nord)
-
-(defvar nord0)
-(defvar nord1)
-(defvar nord2)
-(defvar nord3)
-(defvar nord4)
-(defvar nord5)
-(defvar nord6)
-(defvar nord7)
-(defvar nord8)
-(defvar nord9)
-(defvar nord10)
-(defvar nord11)
-(defvar nord12)
-(defvar nord13)
-(defvar nord14)
-(defvar nord15)
-
-(if (display-graphic-p) (setq nord0  "#2e3440") (setq nord0  nil))
-(if (display-graphic-p) (setq nord1  "#3b4252") (setq nord1  "black"))
-(if (display-graphic-p) (setq nord3  "#434c5e") (setq nord3  "brightblack"))
-(if (display-graphic-p) (setq nord5  "#e5e9f0") (setq nord5  "white"))
-(if (display-graphic-p) (setq nord6  "#eceff4") (setq nord6  "brightwhite"))
-(if (display-graphic-p) (setq nord7  "#8fbcbb") (setq nord7  "cyan"))
-(if (display-graphic-p) (setq nord8  "#88c0d0") (setq nord8  "brightcyan"))
-(if (display-graphic-p) (setq nord9  "#81a1c1") (setq nord9  "blue"))
-(if (display-graphic-p) (setq nord10 "#5e81ac") (setq nord10 "brightblue"))
-(if (display-graphic-p) (setq nord11 "#bf616a") (setq nord11 "red"))
-(if (display-graphic-p) (setq nord12 "#d08770") (setq nord12 "brightyellow"))
-(if (display-graphic-p) (setq nord13 "#ebcb8b") (setq nord13 "yellow"))
-(if (display-graphic-p) (setq nord14 "#a3be8c") (setq nord14 "green"))
-(if (display-graphic-p) (setq nord15 "#b48ead") (setq nord15 "magenta"))
+(deftheme nord "Nord Color them")
 
 (let ((class '((class color) (min-colors 89)))
-      (nord2  "#434c5e")
-      (nord4  "#d8dee9"))
+      ;;                                GUI     Term
+      (nord0  (if (display-graphic-p) "#2e3440"  nil            ))
+      (nord1  (if (display-graphic-p) "#3b4252"  "black"        ))
+      (nord2  (if (display-graphic-p) "#434c5e"  "#434c5e"      ))
+      (nord3  (if (display-graphic-p) "#4c566a"  "brightblack"  ))
+      (nord4  (if (display-graphic-p) "#d8dee9"  "#d8dee9"      ))
+      (nord5  (if (display-graphic-p) "#e5e9f0"  "#white"       ))
+      (nord6  (if (display-graphic-p) "#eceff4"  "#brightwhite" ))
+      (nord7  (if (display-graphic-p) "#8fbcbb"  "#cyan"        ))
+      (nord8  (if (display-graphic-p) "#88c0d0"  "brightcyan"   ))
+      (nord9  (if (display-graphic-p) "#81a1c1"  "blue"         ))
+      (nord10 (if (display-graphic-p) "#5e81ac"  "brightblue"   ))
+      (nord11 (if (display-graphic-p) "#bf616a"  "red"          ))
+      (nord12 (if (display-graphic-p) "#d08770"  "brightyellow" ))
+      (nord13 (if (display-graphic-p) "#ebcb8b"  "yellow"       ))
+      (nord14 (if (display-graphic-p) "#a3be8c"  "green"        ))
+      (nord15 (if (display-graphic-p) "#b48ead"  "magenta"      )))
+      
 
   (custom-theme-set-faces
    'nord
@@ -354,7 +338,6 @@
    `(enh-ruby-string-delimiter-face ((,class (:foreground ,nord14))))
    `(enh-ruby-regexp-delimiter-face ((,class (:foreground ,nord14))))
    `(which-func ((,class (:inherit ,font-lock-function-name-face))))
-
 
    ;;Fountain Mode
    `(fountain-dialog ((, class (:foreground ,nord14))))
