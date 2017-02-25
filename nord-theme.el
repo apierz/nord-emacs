@@ -32,9 +32,9 @@
       (nord2  (if (display-graphic-p) "#434c5e"  "#434c5e"      ))
       (nord3  (if (display-graphic-p) "#4c566a"  "brightblack"  ))
       (nord4  (if (display-graphic-p) "#d8dee9"  "#d8dee9"      ))
-      (nord5  (if (display-graphic-p) "#e5e9f0"  "#white"       ))
-      (nord6  (if (display-graphic-p) "#eceff4"  "#brightwhite" ))
-      (nord7  (if (display-graphic-p) "#8fbcbb"  "#cyan"        ))
+      (nord5  (if (display-graphic-p) "#e5e9f0"  "white"       ))
+      (nord6  (if (display-graphic-p) "#eceff4"  "brightwhite" ))
+      (nord7  (if (display-graphic-p) "#8fbcbb"  "cyan"        ))
       (nord8  (if (display-graphic-p) "#88c0d0"  "brightcyan"   ))
       (nord9  (if (display-graphic-p) "#81a1c1"  "blue"         ))
       (nord10 (if (display-graphic-p) "#5e81ac"  "brightblue"   ))
@@ -44,7 +44,6 @@
       (nord14 (if (display-graphic-p) "#a3be8c"  "green"        ))
       (nord15 (if (display-graphic-p) "#b48ead"  "magenta"      )))
       
-
   (custom-theme-set-faces
    'nord
 
