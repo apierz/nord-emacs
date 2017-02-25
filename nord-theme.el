@@ -276,6 +276,7 @@
    `(helm-separator ((,class (:foreground ,nord9 :background ,nord0))))
    `(helm-time-zone-current ((,class (:foreground ,nord9 :background ,nord0))))
    `(helm-time-zone-home ((,class (:foreground ,nord9 :background ,nord0))))
+   `(helm-buffer-directory ((,class (:foreground ,nord11 :background ,nord4))))
    `(helm-buffer-not-saved ((,class (:foreground ,nord9 :background ,nord0))))
    `(helm-buffer-process ((,class (:foreground ,nord9 :background ,nord0))))
    `(helm-buffer-saved-out ((,class (:foreground ,nord4 :background ,nord0))))
