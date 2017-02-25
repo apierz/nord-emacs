@@ -1,4 +1,4 @@
-;;; nord-theme.el --- Nord Theme port for Emacs
+;;; nord-theme.el --- An arctic, north-bluish color palette.
 
 ;; Copyright (c) 2016 Artic Ice Studio
 ;; Copyright (c) 2017 Andy Pierz
@@ -23,7 +23,7 @@
 
 ;;; Code:
 
-(deftheme nord "Nord Color them")
+(deftheme nord "An arctic, north-bluish color palette")
 
 (let ((class '((class color) (min-colors 89)))
       ;;                                GUI     Term
