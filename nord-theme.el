@@ -361,7 +361,7 @@
 (provide-theme 'nord)
 
 ;; Local Variables:
-;; no-byte-compile:
+;; no-byte-compile: t
 ;; End:
 
 ;;; nord-theme.el ends here
