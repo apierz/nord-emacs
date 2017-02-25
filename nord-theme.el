@@ -6,7 +6,7 @@
 ;; Author Andy Pierz <andy@andypierz.com>
 ;; (current maintainer)
 
-;; Version 1.0
+;; Version: 1.0
 ;; License: Apache 2.0
 
 ;;; Commentary:
