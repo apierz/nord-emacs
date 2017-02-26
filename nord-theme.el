@@ -32,9 +32,9 @@
       (nord2  (if (display-graphic-p) "#434c5e"  "#434c5e"      ))
       (nord3  (if (display-graphic-p) "#4c566a"  "brightblack"  ))
       (nord4  (if (display-graphic-p) "#d8dee9"  "#d8dee9"      ))
-      (nord5  (if (display-graphic-p) "#e5e9f0"  "white"       ))
-      (nord6  (if (display-graphic-p) "#eceff4"  "brightwhite" ))
-      (nord7  (if (display-graphic-p) "#8fbcbb"  "cyan"        ))
+      (nord5  (if (display-graphic-p) "#e5e9f0"  "white"        ))
+      (nord6  (if (display-graphic-p) "#eceff4"  "brightwhite"  ))
+      (nord7  (if (display-graphic-p) "#8fbcbb"  "cyan"         ))
       (nord8  (if (display-graphic-p) "#88c0d0"  "brightcyan"   ))
       (nord9  (if (display-graphic-p) "#81a1c1"  "blue"         ))
       (nord10 (if (display-graphic-p) "#5e81ac"  "brightblue"   ))
@@ -147,6 +147,10 @@
    `(evil-ex-info ((,class (:foreground ,nord11 :italic t))))
    `(evil-ex-substitute-replacement ((,class (:foreground ,nord12 ))))
    `(evil-ex-substitute-matches ((,class (:background ,nord3 :foreground ,nord13))))
+
+   ;;Anzu
+   `(anzu-mode-line ((,class (:foreground, nord12))))
+   `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
 
    ;;Gnus
    `(gnus-group-mail-1 ((,class (:foreground ,nord9 :bold t))))
