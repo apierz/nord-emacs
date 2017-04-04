@@ -1,6 +1,6 @@
 # Nord Theme For Emacs
 
-This is the temporary home for a potential addition to the [Nord Theme family](https://github.com/arcticicestudio/nord). Colors attempt to match the Vim colorscheme whereever possible.
+This is an old, unofficial version of the [Nord Theme family](https://github.com/arcticicestudio/nord) for Emacs. There is now an official version in melpa that is being activley developed so please use that instead.
 
 ## Screenshot
 
